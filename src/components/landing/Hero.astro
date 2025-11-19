@@ -1,28 +1,133 @@
 ---
 import video from "../public/final_720.mp4";
-import Navigation from "../../components/global/Navigation.astro";
 ---
 
 <section class="overflow-hidden">
   <div class="group relative w-full min-h-dvh flex items-center justify-center">
-    <div class="relative flex items-center justify-center h-screen overflow-hidden">
-      <video class="w-screen" playsinline loop="loop" preload="auto" autoplay="autoplay" src={video}></video>
+    <video class="absolute inset-0 w-full h-full object-cover" playsinline loop="loop" preload="auto" autoplay="autoplay" src={video}></video>
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <div class="px-8 pt-10 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
+        <div class="text-center mx-auto lg:text-balance">
+          <p class="text-md lg:text-2xl leading-none text-gray-300">
+            Bienvenido al congreso de CTI más grande del 2026 en Panamá
+          </p>
+          <h2
+            class="text-xl leading-none tracking-tight sm:text-2xl md:text-3xl lg:text-6xl mt-2 font-bold text-white "
+          >
+            X Congreso de Ingeniería Ciencia y Tecnología IESTEC 2026
+          </h2>
+          <p class="text-base leading-normal mt-4 text-gray-300 font-medium">
+            10th International Congress of Engineering, Science and Technology IESTEC 2026.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="px-8 pt-10 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
-    <div class="max-w-2xl text-center mx-auto lg:text-balance">
-      <p class="text-sm leading-normal font-bold text-accent-900">
-        Bienvenido al congreso de CTI más grande del 2026 en Panamá
-      </p>
+<section>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6">
+    <div class="md:col-span-2 md:row-span-2">
+      <img
+        src="public/fotos/IMG_9434.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full lg:h-60"
+      />
+    </div>
+    <div class="md:row-span-2">
+      <img
+        src="public/fotos/IMG_9410.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full lg:h-60"
+      />
+    </div>
+    <div class="md:row-span-3 lg:row-span-2">
+      <img
+        src="public/fotos/IMG_0139.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full lg:h-60"
+      />
+    </div>
+    <div class="md:col-span-2 md:row-span-2">
+      <img
+        src="public/fotos/IMG_9262.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full lg:h-60"
+      />
+    </div>
+    <div class="md:row-span-2 lg:col-span-2">
+      <img
+        src="public/fotos/IMG_0869.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full"
+      />
+    </div>
+    <div class="order-first p-12 text-center lg:col-span-2 lg:order-none">
       <h2
-        class="text-xl leading-tight tracking-tight sm:text-2xl md:text-3xl lg:text-4xl mt-2 font-semibold text-base-900"
+        class="text-xl sm:text-xl md:text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-balance"
       >
-        X Congreso de Ingeniería Ciencia y Tecnología IESTEC 2026
+        +1300 participantes
       </h2>
-      <p class="text-base leading-normal mt-4 text-base-500 font-medium">
-        10th International Congress of Engineering, Science and Technology IESTEC 2026.
+      <p
+        class="text-sm mt-2 font-medium text-zinc-500 dark:text-zinc-400 sm:text-balance"
+      >
+        Estudiantes, académicos y profesionales convergen en IESTEC cada dos años.
       </p>
+      <button
+        class="relative flex items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-white bg-zinc-900 outline outline-zinc-900 hover:bg-zinc-950 focus-visible:outline-zinc-950 dark:bg-zinc-100 dark:text-zinc-900 dark:outline-zinc-100 dark:hover:bg-zinc-200 dark:focus-visible:outline-zinc-200 h-9 px-4 text-sm mx-auto mt-8 w-fit"
+      >
+        See gallery
+      </button>
+    </div>
+    <div class="md:col-span-2">
+      <img
+        src="public/fotos/IMG_9285.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full lg:h-80"
+      />
+    </div>
+    <div class="md:col-span-4">
+      <img
+        src="public/fotos/IMG_9433.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="500"
+        height="500"
+        class="object-cover object-top size-full lg:h-80"
+      />
     </div>
   </div>
+   
 </section>

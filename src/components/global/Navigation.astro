@@ -2,13 +2,14 @@
   <div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
     <div
       x-data="{ open: false }"
-      class="relative flex flex-col w-full py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6"
+      class="relative flex flex-col w-full py-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6"
     >
       <div class="flex flex-row items-center justify-between lg:justify-start">
-        <a href="/" class="text-black inline-flex items-center gap-3">
-          
-          <span class="font-bold font-display">AstroSaas</span>
+        <a href="/" class="text-black inline-flex items-center gap-2">
+          <img src="iestec-10-logo-white.svg" alt="Logo" class="w-22 h-22"/>
+          <!-- <img src="logo-iestec-dark.svg" alt="Logo" class="w-22 h-22"/> -->
         </a>
+
         <button
           @click="open = !open"
           class="inline-flex items-center justify-center p-2 text-base-400 hover:text-black focus:outline-none focus:text-black md:hidden"
@@ -42,18 +43,7 @@
       >
         <a
           class=" text-sm font-medium text-white hover:text-accent-200 lg:ml-auto"
-          href="/#features">Inicio</a
-        >
-        <a
-          class=" text-sm font-medium text-black hover:text-accent-600"
-          href="/#pricing">Pricing</a
-        >
-
-        <a
-          class=" text-sm font-medium text-black hover:text-accent-600"
-          href="/faq"
-        >
-          Faq</a
+          href="/">Inicio</a
         >
       </nav>
     </div>
