@@ -6,8 +6,9 @@
     >
       <div class="flex flex-row items-center justify-between lg:justify-start">
         <a href="/" class="text-black inline-flex items-center gap-2">
+          <img src="public/utp-logo-dark.svg" alt="Logo" class="w-18 h-18"/>
+          <span class="text-white text-4xl font-light">/</span>
           <img src="iestec-10-logo-white.svg" alt="Logo" class="w-22 h-22"/>
-          <!-- <img src="logo-iestec-dark.svg" alt="Logo" class="w-22 h-22"/> -->
         </a>
 
         <button
@@ -37,13 +38,14 @@
           </svg>
         </button>
       </div>
-      <nav
-        :class="{'flex': open, 'hidden': !open}"
-        class="flex-col items-center flex-grow gap-3 hidden md:pb-0 md:flex md:justify-end md:flex-row"
-      >
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col items-center flex-grow gap-3 hidden md:pb-0 md:flex md:justify-end md:flex-row">
         <a
-          class=" text-sm font-medium text-white hover:text-accent-200 lg:ml-auto"
+          class=" text-sm font-medium text-white hover:text-orange-300 lg:ml-auto"
           href="/">Inicio</a
+        >
+        <a
+          class=" text-sm font-medium text-white hover:text-orange-300"
+          href="/about">Acerca</a
         >
       </nav>
     </div>
