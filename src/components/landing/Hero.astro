@@ -1,24 +1,30 @@
 ---
-import video from "../public/final_720.mp4";
+import video from "../public/clips-highlights.mp4";
 ---
 
 <section class="overflow-hidden">
-  <div class="group relative w-full min-h-dvh flex items-center justify-center">
-    <video class="absolute inset-0 w-full h-full object-cover" playsinline loop="loop" preload="auto" autoplay="autoplay" src={video}></video>
-    <div class="relative z-10 flex items-center justify-center h-full">
-      <div class="px-8 pt-10 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
-        <div class="text-center mx-auto lg:text-balance">
-          <p class="text-md lg:text-2xl leading-none text-gray-300">
+  <div class="group relative w-full min-h-dvh flex items-center justify-center bg-black">
+    <video class="absolute inset-0 w-full h-full object-cover" playsinline loop="loop" preload="auto" autoplay="autoplay" muted src={video}></video>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/80 z-[5]"></div>
+    
+    <div class="relative z-10 w-full items-end h-full">
+      <div class="px-8 mx-auto md:px-12 lg:px-24 max-w-7xl w-full">
+        <div class="text-center lg:pt-100 lg:text-balance">
+          <p class="text-md lg:text-2xl leading-none tracking-tight text-gray-300">
             El congreso de CTI más grande del 2026 en Panamá celebra su décima edición
           </p>
           <h2
-            class="text-xl leading-none tracking-tight sm:text-2xl md:text-3xl lg:text-6xl mt-2 font-bold text-white "
+            class="text-xl leading-none tracking-tight sm:text-2xl md:text-3xl lg:text-6xl mt-1 font-bold text-white"
           >
             X Congreso de Ingeniería Ciencia y Tecnología IESTEC 2026
           </h2>
-          <div class="flex items-center justify-center lg:pt-8 gap-8">
-            <img src="public/utp-logo-justificado-blanco.svg" alt="Logo" class="h-14"/>
-            <img src="public/logo-senacyt-blanco.svg" alt="Logo" class="h-10"/>
+          <div class="flex items-center justify-center pt-4 lg:pt-6 gap-8">
+            <a href="https://utp.ac.pa/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity"> 
+              <img src="public/utp-logo-justificado-blanco.svg" alt="Universidad Tecnológica de Panamá Logo" class="h-14"/> 
+            </a>
+            <a href="https://www.senacyt.gob.pa/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+              <img src="public/logo-senacyt-blanco.svg" alt="SENACYT Logo" class="h-10"/>
+            </a>
           </div>
         </div>
       </div>
