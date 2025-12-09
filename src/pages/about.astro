@@ -1,166 +1,70 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayoutContent.astro";
 ---
 <BaseLayout>
-
-<section class="bg-black px-8 pt-18 lg:pt-24 sm:w-fit lg:w-3/4 mx-auto">
-    <div class="container mx-auto">
-        <div class="max-w-2xl md:text-balance">
-            <p
-              class="text-xs relative font-semibold uppercase tracking-wide text-black"
-            >
-              <time datetime="2025-01-09">2025-01-09</time>
-            </p>
-            <h1
-              class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl mt-4 font-semibold tracking-tight text-zinc-900 dark:text-white"
-            >
-              The art and science of responsive web design
-            </h1>
-            <p
-              class="text-lg md:text-xl mt-4 font-medium text-zinc-500 dark:text-zinc-400 lg:text-balance"
-            >
-              Explore advanced strategies and practical insights for crafting responsive
-              websites that adapt beautifully to every device and deliver exceptional user
-              experiences.
-            </p>
-            <div class="flex flex-shrink-0 mt-6 group">
-              <div class="flex items-center gap-2">
-                <div>
-                  <img
-                    class="inline-block rounded-full size-9"
-                    src="/avatars/1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <p
-                    class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400"
-                  >
-                    Michael Andreuzza
-                  </p>
-                  <p class="text-xs font-medium text-zinc-400 dark:text-zinc-500">
-                    @Mike_Andreuzza
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative pt-12 mt-12 border-t border-zinc-200 dark:border-zinc-800 grid grid-cols-1 lg:grid-cols-3 gap-12"
+  <div class="mx-auto w-3/4 pt-32 lg:pt-32">
+    <div class="items-center grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="flex flex-col justify-center h-full lg:order-last">
+        <div>
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-900"
           >
-            <aside class="hidden lg:block">
-              <p
-                class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400"
-              >
-                Table of contents
-              </p>
-              <ul class="pt-4 mt-4 border-t border-zinc-200 dark:border-zinc-800">
-                <li>
-                  <a
-                    href="#_"
-                    class="text-sm font-medium text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300"
-                  >
-                    Latest Articles
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#_"
-                    class="text-sm font-medium text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300"
-                  >
-                    Popular Posts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#_"
-                    class="text-sm font-medium text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300"
-                  >
-                    Categories
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#_"
-                    class="text-sm font-medium text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300"
-                  >
-                    Archives
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#_"
-                    class="text-sm font-medium text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300"
-                  >
-                    About the Author
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#_"
-                    class="text-sm font-medium text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300"
-                  >
-                    Subscribe to Newsletter
-                  </a>
-                </li>
-              </ul>
-            </aside>
-            <div
-              class="mx-auto prose text-zinc-500 dark:text-zinc-400 prose-a:font-semibold prose-a:text-blue-300 dark:prose-a:text-blue-400 hover:prose-a:text-zinc-900 dark:hover:prose-a:text-white prose-headings:text-zinc-900 dark:prose-headings:text-white prose-blockquote:text-blue-400 dark:prose-blockquote:text-blue-300 prose-code:text-blue-400 dark:prose-code:text-blue-300 prose-strong:text-blue-500 dark:prose-strong:text-blue-400 prose-img:rounded-3xl prose-pre:rounded-2xl lg:col-span-2"
-            >
-              <p>
-                In a world where users expect instant access and flawless experiences,
-                responsive web design is the backbone of modern digital products. Your
-                site must do more than just fit the screen—it should feel natural and
-                intuitive, no matter the device. Responsive design is about flexibility,
-                but also about anticipating user needs and delivering content in the most
-                effective way possible.
-              </p>
-              <h2>Start Small, Grow Smart: Mobile-First</h2>
-              <p>
-                Building with a mobile-first mindset means you begin with the essentials:
-                clear content, fast performance, and easy navigation. As you scale up to
-                tablets and desktops, you layer on enhancements that take advantage of
-                larger screens. This approach not only guarantees accessibility for mobile
-                users, but also creates a strong foundation for every device.
-              </p>
-              <h3>Benefits of Prioritizing Mobile</h3>
-              <p>
-                By focusing on mobile first, you’re forced to distill your message and
-                features to what matters most. This leads to cleaner layouts, faster load
-                times, and a more focused user experience. It also means your site is
-                ready for the next wave of devices—whatever shape or size they may be.
-              </p>
-              <blockquote>
-                <p>“Responsive web design is not a feature, it’s a must.”</p>
-                <small>- Jeffrey Zeldman</small>
-              </blockquote>
-              <h2>Design for Everyone: Accessibility & Inclusion</h2>
-              <p>
-                True responsive design goes beyond breakpoints and grids. It’s about
-                making your site usable for everyone, including people with disabilities.
-                Use semantic HTML, provide alt text for images, and ensure your color
-                choices meet accessibility standards. The more inclusive your design, the
-                more people you’ll reach—and the more impact your work will have.
-              </p>
-              <h2>Performance: The Unsung Hero</h2>
-              <p>
-                Don’t let beautiful design slow you down. Optimize images, minimize code,
-                and test your site on real devices. Fast, responsive sites keep users
-                engaged and boost your SEO, making performance a key part of your
-                responsive strategy.
-              </p>
-              <h2>Final Thoughts</h2>
-              <p>
-                Responsive web design is a journey, not a destination. By embracing
-                mobile-first principles, prioritizing accessibility, and never losing
-                sight of performance, you’ll create digital experiences that stand the
-                test of time—and delight users everywhere.
-              </p>
-            </div>
-          </div>
+            Cónoce más sobre IESTEC
+          </h1>
+          <p class="text-sm mt-2 font-medium text-zinc-500">
+            El congreso de CTI más grande de Panamá cada 2 años.
+          </p>
+        </div>
+      </div>
+      <img
+        src="fotos/IMG_9433.jpg"
+        alt="#_"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="auto"
+        width="570"
+        height="480"
+        class="object-cover object-center w-full rounded-xl aspect-5/3 lg:col-span-2"
+      />
     </div>
-          
-</section>
-
+    <div
+      class="pt-12 mx-auto mt-12 border-t prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-700 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl border-zinc-200"
+    >
+      <p>
+        Building a digital product today means designing for a world in motion. Our
+        users are everywhere—on phones, tablets, laptops, and screens we haven’t
+        even imagined yet. The challenge isn’t just to make things fit, but to make
+        them feel right, no matter where or how they’re experienced.
+      </p>
+      <h2>Designing for Real Life</h2>
+      <p>
+        We start by thinking about the real people who use our products. What are
+        they trying to do? Where are they? Are they on a crowded train, or at a
+        quiet desk? By putting ourselves in their shoes, we design interfaces that
+        are clear, forgiving, and easy to use—even when life gets messy.
+      </p>
+      <h3>Iterate, Test, Repeat</h3>
+      <p>
+        Our process is hands-on and collaborative. We sketch, prototype, and test on
+        actual devices, not just in the browser. Every iteration is a chance to
+        learn: what works, what confuses, what delights. We believe the best ideas
+        come from real feedback, not just theory.
+      </p>
+      <blockquote>
+        <p>“Great design is invisible. It just works, wherever you are.”</p>
+        <small>- Oxbow Team</small>
+      </blockquote>
+      <div class="border-t p border-zinc-200">
+        <h2>Our Philosophy</h2>
+        <p>
+          For us, responsive design isn’t a checklist—it’s a mindset. We aim to
+          create experiences that are flexible, accessible, and genuinely helpful.
+          By staying curious and open to change, we keep improving, so our users
+          always get the best, no matter what device they choose.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
 </BaseLayout>
