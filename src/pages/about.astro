@@ -2,67 +2,312 @@
 import BaseLayout from "../layouts/BaseLayoutContent.astro";
 ---
 <BaseLayout>
-  <div class="mx-auto w-3/4 pt-32 lg:pt-32">
-    <div class="items-center grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <div class="flex flex-col justify-center h-full lg:order-last">
-        <div>
-          <h1
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-900"
-          >
-            Cónoce más sobre IESTEC
-          </h1>
-          <p class="text-sm mt-2 font-medium text-zinc-500">
-            El congreso de CTI más grande de Panamá cada 2 años.
-          </p>
-        </div>
-      </div>
-      <img
-        src="fotos/IMG_9433.jpg"
-        alt="#_"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="auto"
-        width="570"
-        height="480"
-        class="object-cover object-center w-full rounded-xl aspect-5/3 lg:col-span-2"
-      />
-    </div>
-    <div
-      class="pt-12 mx-auto mt-12 border-t prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-700 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl border-zinc-200"
+<section class="container mx-auto lg:pt-32 lg:px-8">
+  <div class="max-w-2xl md:text-balance">
+    <h1
+      class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 font-semibold tracking-tight text-zinc-900"
     >
-      <p>
-        Building a digital product today means designing for a world in motion. Our
-        users are everywhere—on phones, tablets, laptops, and screens we haven’t
-        even imagined yet. The challenge isn’t just to make things fit, but to make
-        them feel right, no matter where or how they’re experienced.
-      </p>
-      <h2>Designing for Real Life</h2>
-      <p>
-        We start by thinking about the real people who use our products. What are
-        they trying to do? Where are they? Are they on a crowded train, or at a
-        quiet desk? By putting ourselves in their shoes, we design interfaces that
-        are clear, forgiving, and easy to use—even when life gets messy.
-      </p>
-      <h3>Iterate, Test, Repeat</h3>
-      <p>
-        Our process is hands-on and collaborative. We sketch, prototype, and test on
-        actual devices, not just in the browser. Every iteration is a chance to
-        learn: what works, what confuses, what delights. We believe the best ideas
-        come from real feedback, not just theory.
-      </p>
-      <blockquote>
-        <p>“Great design is invisible. It just works, wherever you are.”</p>
-        <small>- Oxbow Team</small>
-      </blockquote>
-      <div class="border-t p border-zinc-200">
-        <h2>Our Philosophy</h2>
-        <p>
-          For us, responsive design isn’t a checklist—it’s a mindset. We aim to
-          create experiences that are flexible, accessible, and genuinely helpful.
-          By staying curious and open to change, we keep improving, so our users
-          always get the best, no matter what device they choose.
-        </p>
+    IESTEC: Ingeniería, Ciencia y Tecnología 
+    </h1>
+    <p class="text-lg md:text-xl mt-4 font-medium text-zinc-500 lg:text-balance">
+      Un breve resumen de lo que significa nuestro congreso, su impacto, historia y quienes hacen posible este evento.
+    </p>
+    <div class="flex flex-shrink-0 mt-6 group">
+      <div class="flex items-center gap-2">
+        <div>
+          <img
+            class="rounded-full size-14"
+            src="img-equipo/carlos.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <p
+            class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500"
+          >
+            Dr. Carlos Medina
+          </p>
+          <p class="text-xs font-medium text-zinc-400">Comité Científico-Técnico</p>
+        </div>
       </div>
     </div>
   </div>
+  <div
+    class="relative pt-12 mt-12 border-t border-zinc-200 grid grid-cols-1 lg:grid-cols-4"
+  >
+    <aside class="hidden lg:block">
+      <p
+        class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500"
+      >
+        Tabla de contenido
+      </p>
+      <ul class="pt-4 mt-4 border-t border-zinc-200">
+        <li>
+          <a
+            href="#_"
+            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
+          >
+            Acerca del Congreso
+          </a>
+        </li>
+        <li>
+          <a
+            href="#_"
+            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
+          >
+            Áreas temáticas
+          </a>
+        </li>
+        <li>
+          <a
+            href="#_"
+            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
+          >
+            Llamado a artículos y pósteres
+          </a>
+        </li>
+        <li>
+          <a
+            href="#_"
+            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
+          >
+            Participación y Registro
+          </a>
+        </li>
+        <li>
+          <a
+            href="#_"
+            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
+          >
+            Programa
+          </a>
+        </li>
+        <li>
+          <a
+            href="#_"
+            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
+          >
+            Alianzas estratégicas y Patrocinadores
+          </a>
+        </li>
+      </ul>
+    </aside>
+    
+    <div
+      class="mx-auto prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-400 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl lg:col-span-3"
+    >
+      <h2>¿Qué es IESTEC?</h2>
+      <p>
+        El Congreso Internacional de Ingeniería, Ciencias y Tecnología (IESTEC 2026) es el principal encuentro académico-científico en ingeniería, ciencias aplicadas y tecnologías emergentes de la región centroamericana, y uno de los eventos internacionales de mayor proyección organizados por la Universidad Tecnológica de Panamá, con el patrocinio de la Secretaría Nacional de Ciencia, Tecnología e Innovación.
+      </p>
+      
+      <p>
+        Celebrado cada dos años, IESTEC constituye una plataforma de excelencia para la difusión del conocimiento científico, el intercambio de experiencias, la discusión de tendencias tecnológicas de frontera y la construcción de redes de colaboración entre investigadores, académicos, estudiantes y profesionales de múltiples disciplinas y países.
+      </p>
+      <p>
+        Como parte de su compromiso con la calidad y la visibilidad internacional, los artículos aceptados y presentados en el congreso son publicados en los Proceedings de IEEE Xplore Digital Library, los cuales han sido indexados en Scopus en ediciones anteriores, consolidando a IESTEC como un evento de alto impacto académico.
+      
+      </p>
+
+      <h3>IESTEC 2026</h3>
+      
+      <p class="font-semibold">
+        Inspirando, investigando e innovando
+      </p>
+        El lema del X IESTEC 2026 —“Inspirando, investigando e innovando” expresa la visión del congreso como un espacio dinámico donde las ideas se transforman en conocimiento y el conocimiento en soluciones con impacto real.
+      <p>  
+        IESTEC 2026 es un congreso que:
+      </p>
+
+      <ul>
+        <li>Inspira nuevas ideas, vocaciones científicas y visiones transformadoras.</li>
+        <li>Impulsa la investigación rigurosa, interdisciplinaria y orientada a resultados.</li>
+        <li>Promueve la innovación como motor del desarrollo sostenible, la competitividad y el bienestar social.</li>
+        <li>Este enfoque reconoce que la inspiración es el origen del conocimiento, la investigación su base sólida y la innovación su proyección hacia el futuro.</li>
+      </ul>
+        
+      <h2>Un congreso con proyección internacional</h2>
+      <p>
+        A lo largo de sus ediciones, IESTEC se ha consolidado como un congreso multidisciplinario de alcance internacional, que convoca a la comunidad científica y tecnológica para reflexionar y proponer soluciones a los grandes desafíos contemporáneos: sostenibilidad, transformación digital, energía, infraestructura, inteligencia artificial, biotecnología, educación en ingeniería y desarrollo productivo.
+      </p>
+      <p>
+        La edición anterior, IESTEC 2024, reunió a más de 1,200 participantes nacionales e internacionales, con una destacada presencia de conferencistas de alto nivel, decenas de conferencias magistrales, sesiones técnicas, foros especializados y actividades académicas paralelas organizadas por las facultades de la UTP, sentando bases sólidas para la décima edición del congreso.
+      </p>
+      <h2>Propósito y objetivos del IESTEC 2026</h2>
+      <p>
+        IESTEC 2026 tiene como propósito central fortalecer el ecosistema nacional y regional de investigación, desarrollo tecnológico e innovación, promoviendo la integración efectiva entre academia, industria, sector público y sociedad. Entre sus objetivos principales se destacan:
+        <ul>
+          <li>Difundir resultados de investigación científica y desarrollos tecnológicos de alto impacto.</li>
+          <li>Fomentar el diálogo interdisciplinario y la cooperación científica internacional.</li>
+          <li>Impulsar la participación activa de estudiantes de grado y postgrado en espacios académicos de excelencia.</li>
+          <li>Contribuir al posicionamiento de Panamá como un referente regional en ciencia, tecnología e innovación.</li>
+          <li>Facilitar la transferencia de conocimiento y la generación de soluciones a problemas complejos de la sociedad contemporánea.</li>
+        </ul>
+      </p>
+      <h2>Enfoque interdisciplinario y participación académica</h2>
+      <p>
+        IESTEC 2026 promueve un enfoque abierto e interdisciplinario, integrando áreas de la ingeniería, ciencias exactas y naturales, tecnologías digitales, ciencias aplicadas, gestión, logística y humanidades vinculadas a la ciencia y la tecnología. El programa académico incluye:
+        <ul>
+          <li>Conferencias magistrales de expertos internacionales.</li>
+          <li>Sesiones técnicas y presentaciones de artículos científicos.</li>
+          <li>Sesiones de póster y espacios de networking académico.</li>
+          <li>Foros, paneles y simposios especializados.</li>
+          <li>Actividades paralelas de las facultades en el marco del Encuentro Científico Académico (ECA).</li>
+        </ul>
+        Este formato favorece el intercambio de ideas, la colaboración efectiva y el aprendizaje transversal entre generaciones y disciplinas.
+      </p>
+      <h2>IESTEC 2026: diez ediciones impulsando el conocimiento</h2>
+      <p>
+        La décima edición de IESTEC representa un hito institucional y académico, celebrando una trayectoria de diez congresos dedicados a inspirar ideas, investigar con rigor e innovar con propósito. IESTEC 2026 invita a la comunidad científica y tecnológica nacional e internacional a formar parte de este espacio de encuentro, reflexión y construcción colectiva del futuro, donde la ciencia, la ingeniería y la innovación convergen para generar impacto.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container mx-auto py-18 px-14 border-t border-gray-200 mt-4">
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <div>
+      <h2
+        class="text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-zinc-900 text-balance"
+      >
+        Conóce al equipo que hace posible esta décima edición
+      </h2>
+    </div>
+    <ul
+      role="list"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:col-span-2"
+    >
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-18"
+            src="img-equipo/lilia.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Dra. Lilia Muñoz</h3>
+            <p class="text-sm font-medium text-zinc-500">Presidente del Congreso</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-18"
+            src="img-equipo/carlos.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Dr. Carlos Medina</h3>
+            <p class="text-sm font-medium text-zinc-500">Comité Científico-Técnico</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-18"
+            src="img-equipo/grimaldo.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Dr. Grimaldo Ureña</h3>
+            <p class="text-sm font-medium text-zinc-500">Sub-Comité Científico-Técnico</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-18"
+            src="img-equipo/ivan.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Est. Ivan Bonilla</h3>
+            <p class="text-sm font-medium text-zinc-500">Coordinador General / Webmaster</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-18"
+            src="img-equipo/juli.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Lic. Julissa Rodriguez</h3>
+            <p class="text-sm font-medium text-zinc-500">Comité Logístico / Asistente Ejecutiva</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-18"
+            src="img-equipo/karla.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Mgtr. Karla Arosemena</h3>
+            <p class="text-sm font-medium text-zinc-500">Comité de Asuntos Internacionales</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-12"
+            src="/avatars/6.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Ing. Coordinadora de Extensión</h3>
+            <p class="text-sm font-medium text-zinc-500">Comité de Patrocinio</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-12"
+            src="/avatars/7.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Ing. Diana Ng</h3>
+            <p class="text-sm font-medium text-zinc-500">Comité de Finanzas</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-12"
+            src="/avatars/8.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Mgtr. Angelo Flores</h3>
+            <p class="text-sm font-medium text-zinc-500">Comité de Comunicaciones</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <img
+            class="object-cover rounded-full size-12"
+            src="/avatars/9.jpg"
+            alt="#_"
+          />
+          <div>
+            <h3 class="text-base font-semibold text-zinc-900">Dra. Tatiana Salgado</h3>
+            <p class="text-sm font-medium text-zinc-500">Coordinadora de Encuentro Científico Académico (ECA)</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>  
+</section>
 </BaseLayout>
