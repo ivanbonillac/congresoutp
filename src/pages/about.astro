@@ -2,114 +2,49 @@
 import BaseLayout from "../layouts/BaseLayoutContent.astro";
 ---
 <BaseLayout>
-<section class="container mx-auto lg:pt-32 lg:px-8">
-  <div class="max-w-2xl md:text-balance">
-    <h1
-      class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 font-semibold tracking-tight text-zinc-900"
-    >
-    IESTEC: Ingeniería, Ciencia y Tecnología 
-    </h1>
-    <p class="text-lg md:text-xl mt-4 font-medium text-zinc-500 lg:text-balance">
-      Un breve resumen de lo que significa nuestro congreso, su impacto, historia y quienes hacen posible este evento.
-    </p>
-    <div class="flex flex-shrink-0 mt-6 group">
-      <div class="flex items-center gap-2">
-        <div>
-          <img
-            class="rounded-full size-14"
-            src="img-equipo/carlos.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <p
-            class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500"
-          >
-            Dr. Carlos Medina
-          </p>
-          <p class="text-xs font-medium text-zinc-400">Comité Científico-Técnico</p>
-        </div>
+  <div class="max-w-xl mx-auto lg:pt-28">
+    <div class="text-center md:text-balance mt-4">
+      <h1
+        class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl mt-4 font-semibold tracking-tight text-zinc-900"
+      >
+      IESTEC: Ingeniería, Ciencia y Tecnología
+      </h1>
+      <p class="text-base mt-2 font-medium text-zinc-500">
+        Un breve resumen de lo que significa nuestro congreso, su impacto, historia y quienes hacen posible este evento.
+      </p>
+    </div>
+    <div class="flex items-center justify-center mt-6 gap-2">
+      <div>
+        <img
+          class="rounded-full size-14"
+          src="img-equipo/carlos.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <p
+          class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500"
+        >
+          Dr. Carlos Medina
+        </p>
+        <p class="text-xs font-medium text-zinc-400">Comité Científico-Técnico</p>
       </div>
     </div>
   </div>
   <div
-    class="relative pt-12 mt-12 border-t border-zinc-200 grid grid-cols-1 lg:grid-cols-4"
+    class="pt-12 mb-8 mx-auto mt-12 border-t prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-700 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl border-zinc-200"
   >
-    <aside class="hidden lg:block">
-      <p
-        class="text-xs relative font-semibold uppercase tracking-wide text-zinc-500"
-      >
-        Tabla de contenido
-      </p>
-      <ul class="pt-4 mt-4 border-t border-zinc-200">
-        <li>
-          <a
-            href="#_"
-            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
-          >
-            Acerca del Congreso
-          </a>
-        </li>
-        <li>
-          <a
-            href="#_"
-            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
-          >
-            Áreas temáticas
-          </a>
-        </li>
-        <li>
-          <a
-            href="#_"
-            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
-          >
-            Llamado a artículos y pósteres
-          </a>
-        </li>
-        <li>
-          <a
-            href="#_"
-            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
-          >
-            Participación y Registro
-          </a>
-        </li>
-        <li>
-          <a
-            href="#_"
-            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
-          >
-            Programa
-          </a>
-        </li>
-        <li>
-          <a
-            href="#_"
-            class="text-sm font-medium text-zinc-900 hover:text-blue-600"
-          >
-            Alianzas estratégicas y Patrocinadores
-          </a>
-        </li>
-      </ul>
-    </aside>
-    
-    <div
-      class="mx-auto prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-400 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl lg:col-span-3"
-    >
-      <h2>¿Qué es IESTEC?</h2>
-      <p>
-        El Congreso Internacional de Ingeniería, Ciencias y Tecnología (IESTEC 2026) es el principal encuentro académico-científico en ingeniería, ciencias aplicadas y tecnologías emergentes de la región centroamericana, y uno de los eventos internacionales de mayor proyección organizados por la Universidad Tecnológica de Panamá, con el patrocinio de la Secretaría Nacional de Ciencia, Tecnología e Innovación.
-      </p>
-      
-      <p>
-        Celebrado cada dos años, IESTEC constituye una plataforma de excelencia para la difusión del conocimiento científico, el intercambio de experiencias, la discusión de tendencias tecnológicas de frontera y la construcción de redes de colaboración entre investigadores, académicos, estudiantes y profesionales de múltiples disciplinas y países.
-      </p>
-      <p>
-        Como parte de su compromiso con la calidad y la visibilidad internacional, los artículos aceptados y presentados en el congreso son publicados en los Proceedings de IEEE Xplore Digital Library, los cuales han sido indexados en Scopus en ediciones anteriores, consolidando a IESTEC como un evento de alto impacto académico.
-      
-      </p>
+    <p>
+      El Congreso Internacional de Ingeniería, Ciencias y Tecnología (IESTEC 2026) es el principal encuentro académico-científico en ingeniería, ciencias aplicadas y tecnologías emergentes de la región centroamericana, y uno de los eventos internacionales de mayor proyección organizados por la Universidad Tecnológica de Panamá, con el patrocinio de la Secretaría Nacional de Ciencia, Tecnología e Innovación.
 
-      <h3>IESTEC 2026</h3>
+    </p>
+    <p>
+      Celebrado cada dos años, IESTEC constituye una plataforma de excelencia para la difusión del conocimiento científico, el intercambio de experiencias, la discusión de tendencias tecnológicas de frontera y la construcción de redes de colaboración entre investigadores, académicos, estudiantes y profesionales de múltiples disciplinas y países.
+    </p>
+    <p>
+      Como parte de su compromiso con la calidad y la visibilidad internacional, los artículos aceptados y presentados en el congreso son publicados en los Proceedings de IEEE Xplore Digital Library, los cuales han sido indexados en Scopus en ediciones anteriores, consolidando a IESTEC como un evento de alto impacto académico.
+    </p>
+    <h3>IESTEC 2026</h3>
       
       <p class="font-semibold">
         Inspirando, investigando e innovando
@@ -160,154 +95,153 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
       <p>
         La décima edición de IESTEC representa un hito institucional y académico, celebrando una trayectoria de diez congresos dedicados a inspirar ideas, investigar con rigor e innovar con propósito. IESTEC 2026 invita a la comunidad científica y tecnológica nacional e internacional a formar parte de este espacio de encuentro, reflexión y construcción colectiva del futuro, donde la ciencia, la ingeniería y la innovación convergen para generar impacto.
       </p>
-    </div>
   </div>
-</section>
 
-<section class="container mx-auto py-18 px-14 border-t border-gray-200 mt-4">
-  <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-    <div>
-      <h2
-        class="text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-zinc-900 text-balance"
+  <section class="container mx-auto py-18 px-14 border-t border-gray-200 mt-4">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <h2
+          class="text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-zinc-900 text-balance"
+        >
+          Conóce al equipo que hace posible esta décima edición
+        </h2>
+      </div>
+      <ul
+        role="list"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:col-span-2"
       >
-        Conóce al equipo que hace posible esta décima edición
-      </h2>
-    </div>
-    <ul
-      role="list"
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:col-span-2"
-    >
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-18"
-            src="img-equipo/lilia.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Dra. Lilia Muñoz</h3>
-            <p class="text-sm font-medium text-zinc-500">Presidente del Congreso</p>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-18"
+              src="img-equipo/lilia.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Dra. Lilia Muñoz</h3>
+              <p class="text-sm font-medium text-zinc-500">Presidente del Congreso</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-18"
-            src="img-equipo/carlos.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Dr. Carlos Medina</h3>
-            <p class="text-sm font-medium text-zinc-500">Comité Científico-Técnico</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-18"
+              src="img-equipo/carlos.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Dr. Carlos Medina</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité Científico-Técnico</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-18"
-            src="img-equipo/grimaldo.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Dr. Grimaldo Ureña</h3>
-            <p class="text-sm font-medium text-zinc-500">Sub-Comité Científico-Técnico</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-18"
+              src="img-equipo/grimaldo.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Dr. Grimaldo Ureña</h3>
+              <p class="text-sm font-medium text-zinc-500">Sub-Comité Científico-Técnico</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-18"
-            src="img-equipo/ivan.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Est. Ivan Bonilla</h3>
-            <p class="text-sm font-medium text-zinc-500">Coordinador General / Webmaster</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-18"
+              src="img-equipo/ivan.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Est. Ivan Bonilla</h3>
+              <p class="text-sm font-medium text-zinc-500">Coordinador General / Webmaster</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-18"
-            src="img-equipo/juli.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Lic. Julissa Rodriguez</h3>
-            <p class="text-sm font-medium text-zinc-500">Comité Logístico / Asistente Ejecutiva</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-18"
+              src="img-equipo/juli.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Lic. Julissa Rodriguez</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité Logístico / Asistente Ejecutiva</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-18"
-            src="img-equipo/karla.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Mgtr. Karla Arosemena</h3>
-            <p class="text-sm font-medium text-zinc-500">Comité de Asuntos Internacionales</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-18"
+              src="img-equipo/karla.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Mgtr. Karla Arosemena</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité de Asuntos Internacionales</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-12"
-            src="/avatars/6.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Ing. Coordinadora de Extensión</h3>
-            <p class="text-sm font-medium text-zinc-500">Comité de Patrocinio</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-12"
+              src="/avatars/6.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Ing. Teresa Rowe</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité de Patrocinio</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-12"
-            src="/avatars/7.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Ing. Diana Ng</h3>
-            <p class="text-sm font-medium text-zinc-500">Comité de Finanzas</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-12"
+              src="/avatars/7.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Ing. Diana Ng</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité de Finanzas</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-12"
-            src="/avatars/8.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Mgtr. Angelo Flores</h3>
-            <p class="text-sm font-medium text-zinc-500">Comité de Comunicaciones</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-12"
+              src="/avatars/8.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Mgtr. Angelo Flores</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité de Comunicaciones</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-4">
-          <img
-            class="object-cover rounded-full size-12"
-            src="/avatars/9.jpg"
-            alt="#_"
-          />
-          <div>
-            <h3 class="text-base font-semibold text-zinc-900">Dra. Tatiana Salgado</h3>
-            <p class="text-sm font-medium text-zinc-500">Coordinadora de Encuentro Científico Académico (ECA)</p>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
+            <img
+              class="object-cover rounded-full size-12"
+              src="/avatars/9.jpg"
+              alt="#_"
+            />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Dra. Tatiana Salgado</h3>
+              <p class="text-sm font-medium text-zinc-500">Coordinadora de Encuentro Científico Académico (ECA)</p>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </div>  
-</section>
+        </li>
+      </ul>
+    </div>  
+  </section>
+  
 </BaseLayout>
