@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayoutContent.astro";
 ---
+
 <BaseLayout>
-  <div class="max-w-xl mx-auto lg:pt-28">
+  <div class="max-w-xl mx-auto lg:pt-30">
     <div class="text-center md:text-balance mt-4">
       <h1
         class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl mt-4 font-semibold tracking-tight text-zinc-900"
@@ -13,7 +14,7 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
         Un breve resumen de lo que significa nuestro congreso, su impacto, historia y quienes hacen posible este evento.
       </p>
     </div>
-    <div class="flex items-center justify-center mt-6 gap-2">
+    <div class="flex items-center justify-center mt-8 gap-2">
       <div>
         <img
           class="rounded-full size-14"
@@ -32,34 +33,34 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
     </div>
   </div>
   <div
-    class="pt-12 mb-8 mx-auto mt-12 border-t prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-700 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl border-zinc-200"
+    class="pt-8 mb-2 mx-auto prose max-w-5xl"
   >
-    <p>
+    <p class="text-gray-600">
       El Congreso Internacional de Ingeniería, Ciencias y Tecnología (IESTEC 2026) es el principal encuentro académico-científico en ingeniería, ciencias aplicadas y tecnologías emergentes de la región centroamericana, y uno de los eventos internacionales de mayor proyección organizados por la Universidad Tecnológica de Panamá, con el patrocinio de la Secretaría Nacional de Ciencia, Tecnología e Innovación.
-
     </p>
-    <p>
+    <p class="text-gray-600 mt-2">
       Celebrado cada dos años, IESTEC constituye una plataforma de excelencia para la difusión del conocimiento científico, el intercambio de experiencias, la discusión de tendencias tecnológicas de frontera y la construcción de redes de colaboración entre investigadores, académicos, estudiantes y profesionales de múltiples disciplinas y países.
     </p>
-    <p>
+    <p class="text-gray-600 mt-2">
       Como parte de su compromiso con la calidad y la visibilidad internacional, los artículos aceptados y presentados en el congreso son publicados en los Proceedings de IEEE Xplore Digital Library, los cuales han sido indexados en Scopus en ediciones anteriores, consolidando a IESTEC como un evento de alto impacto académico.
     </p>
-    <h3>IESTEC 2026</h3>
-      
+    
+    <h3 class="mt-8 text-2xl font-bold">IESTEC 2026</h3>  
       <p class="font-semibold">
         Inspirando, investigando e innovando
       </p>
-        El lema del X IESTEC 2026 —“Inspirando, investigando e innovando” expresa la visión del congreso como un espacio dinámico donde las ideas se transforman en conocimiento y el conocimiento en soluciones con impacto real.
-      <p>  
-        IESTEC 2026 es un congreso que:
-      </p>
 
-      <ul>
-        <li>Inspira nuevas ideas, vocaciones científicas y visiones transformadoras.</li>
-        <li>Impulsa la investigación rigurosa, interdisciplinaria y orientada a resultados.</li>
-        <li>Promueve la innovación como motor del desarrollo sostenible, la competitividad y el bienestar social.</li>
-        <li>Este enfoque reconoce que la inspiración es el origen del conocimiento, la investigación su base sólida y la innovación su proyección hacia el futuro.</li>
-      </ul>
+      <p class="text-gray-700 mt-4">
+        El lema del X IESTEC 2026 —“Inspirando, investigando e innovando” expresa la visión del congreso como un espacio dinámico donde las ideas se transforman en conocimiento y el conocimiento en soluciones con impacto real. 
+        IESTEC 2026 es un congreso que:
+
+        <ul class="list-disc text-gray-700">
+          <li>Inspira nuevas ideas, vocaciones científicas y visiones transformadoras.</li>
+          <li>Impulsa la investigación rigurosa, interdisciplinaria y orientada a resultados.</li>
+          <li>Promueve la innovación como motor del desarrollo sostenible, la competitividad y el bienestar social.</li>
+          <li>Este enfoque reconoce que la inspiración es el origen del conocimiento, la investigación su base sólida y la innovación su proyección hacia el futuro.</li>
+        </ul>
+      </p>
         
       <h2>Un congreso con proyección internacional</h2>
       <p>
@@ -191,23 +192,26 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
         <li>
           <div class="flex items-center gap-4">
             <img
-              class="object-cover rounded-full size-12"
-              src="/avatars/6.jpg"
+              class="object-cover rounded-full size-18"
+              src="img-equipo/yessica.jpg"
               alt="#_"
             />
+            <div>
+              <h3 class="text-base font-semibold text-zinc-900">Dra. Yessica Sáez</h3>
+              <p class="text-sm font-medium text-zinc-500">Comité de Publicación</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-4">
             <div>
               <h3 class="text-base font-semibold text-zinc-900">Ing. Teresa Rowe</h3>
               <p class="text-sm font-medium text-zinc-500">Comité de Patrocinio</p>
             </div>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div class="flex items-center gap-4">
-            <img
-              class="object-cover rounded-full size-12"
-              src="/avatars/7.jpg"
-              alt="#_"
-            />
             <div>
               <h3 class="text-base font-semibold text-zinc-900">Ing. Diana Ng</h3>
               <p class="text-sm font-medium text-zinc-500">Comité de Finanzas</p>
@@ -216,24 +220,14 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
         </li>
         <li>
           <div class="flex items-center gap-4">
-            <img
-              class="object-cover rounded-full size-12"
-              src="/avatars/8.jpg"
-              alt="#_"
-            />
             <div>
               <h3 class="text-base font-semibold text-zinc-900">Mgtr. Angelo Flores</h3>
               <p class="text-sm font-medium text-zinc-500">Comité de Comunicaciones</p>
             </div>
           </div>
-        </li>
+        </li> -->
         <li>
           <div class="flex items-center gap-4">
-            <img
-              class="object-cover rounded-full size-12"
-              src="/avatars/9.jpg"
-              alt="#_"
-            />
             <div>
               <h3 class="text-base font-semibold text-zinc-900">Dra. Tatiana Salgado</h3>
               <p class="text-sm font-medium text-zinc-500">Coordinadora de Encuentro Científico Académico (ECA)</p>
