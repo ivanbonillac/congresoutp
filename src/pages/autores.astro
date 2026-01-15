@@ -6,7 +6,7 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
         <div class="max-w-3xl">
             <span class="inline-flex items-center font-medium relative text-amber-600 bg-amber-600/10 px-4 py-1.5 text-sm rounded-lg">Importante</span>
             <h2
-              class="mt-2 text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-900 text-balance"
+              class="mt-2 text-2xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-zinc-900 text-balance"
             >
               Fechas para Autores
             </h2>
@@ -98,19 +98,20 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
     
     <div class="max-w-xl mx-auto text-center lg:text-balance">
         <h2
-          class="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-900 lg:text-balance"
+          class="text-3xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-zinc-900 lg:text-balance"
         >
           ¿Listo/a para ser autor/a de IESTEC 2026?
         </h2>
         <p class="text-sm mt-4 text-zinc-500 lg:text-balance">
-          Aquí podrás encontrar toda la información necesaria. ¿Qúe vas a trabajar?
+          IESTEC es una conferencia internacional multidisciplinaria que reúne a cientos de académicos, estudiantes, investigadores y profesionales de diversas disciplinas de la ingeniería y las ciencias aplicadas.
         </p>
       </div>
       <dl
-        class="max-w-3xl mx-auto mt-10 text-left grid grid-cols-1 md:grid-cols-2 gap-4"
+        class="max-w-7xl mx-auto mt-10 mb-10 text-left grid grid-cols-1 md:grid-cols-2 gap-2"
       >
+        <!--Card artículos -->      
         <div
-          class="p-8 bg-linear-180 outline outline-zinc-100 from-zinc-100 to-zinc-200 rounded-xl"
+          class="p-8 bg-linear-180 outline outline-zinc-100 from-zinc-50 to-zinc-100 rounded-xl"
         >
           <div>
             <dt>
@@ -122,21 +123,60 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
             </dt>
             <dd>
               <p class="text-base mt-2 text-zinc-600">
-                Tailor it your way—whether you’re a pro or just figuring it out.
+                Invitamos a presentar artículos con contribuciones originales e inéditas de interés práctico y/o teórico que aborden cualquiera de nuestras <a href="/areastematicas" class="text-blue-600">áreas temáticas.</a>
+              </p>
+
+              <p class="text-base mt-2 text-zinc-600">
+                Todos los trabajos completos del congreso, revisados ​​por pares y presentados presencialmente, se enviarán para su publicación en IEEE Xplore.
+              </p>
+
+              <p class="text-base mt-2 text-zinc-600">
+                El congreso incluirá sesiones magistrales, conferencias de ponencias, sesiones de pósteres, simposios, foros de expertos y conferencias técnicas. Agradecemos su apoyo para promover este importante congreso internacional entre sus colegas y para el envío de trabajos académicos.
+              </p>
+              
+              <p class="text-base mt-2 text-zinc-600">
+                Para consultar las directrices detalladas de envío, revisar: Su presencia en este congreso es importante para nosotros. Esperamos verlo en IESTEC 2026 en Panamá.
+              </p>
+
+              <p class="text-base mt-2 text-zinc-600">
+                El sitio para el envío de trabajos estará disponible próximamente.
+              </p>
+            </dd>
+            <dd class="pt-4 mt-4 border-t border-zinc-200">
+              <p class="text-base font-bold mt-2 text-gray-700">
+                Lineamientos
+              </p>
+              <p class="text-sm text-zinc-500 mt-2">
+                Asegúrese de que todos los artículos sean revisados ​​y verificados antes de su envío. No se podrán realizar cambios importantes durante el proceso de revisión. Si se aceptan, se podrán realizar revisiones menores antes del envío final.
+              </p>
+
+              <ul class="list-disc text-sm text-zinc-500 ms-4 mt-2">
+                <li>El contenido del trabajo debe ser original y relevante para uno de los temas de la conferencia.</li>
+                <li>Los trabajos deben ser inéditos y no haber sido enviados a ninguna otra plataforma.</li>
+                <li>Los trabajos deben estar en inglés o español, con una extensión máxima de 6 páginas y deben seguir el formato de la plantilla descargable (enlace).</li>
+                <li>Los trabajos enviados en español deben incluir el título, el resumen y las palabras clave en inglés.</li>
+                <li>Los autores deben garantizar la precisión de las citas, referencias, diagramas, mapas y tablas.</li>
+                <li>Las figuras y tablas deben ubicarse en el texto donde aparecerán y deben ser claras y fáciles de visualizar (alta definición).</li>
+                <li>Los trabajos deben enviarse en formato WORD sin la información de los autores, a través de la plataforma (enlace).</li>
+                <li>Los trabajos serán evaluados por un Comité Técnico; su revisión será de su exclusiva responsabilidad y sus decisiones serán inapelables.</li>
+                <li>Los trabajos aceptados y presentados formarán parte de las Actas de IESTEC 2026 enviadas a IEEE Xplore®.</li>
+              </ul>
+              </p>
+            </dd>
+            <dd class="pt-4 mt-4 border-t border-zinc-200">
+              <p class="text-sm text-zinc-500">
+                Las decisiones de aceptación considerarán la relevancia del artículo, el contenido técnico y el rigor científico, la novedad, la calidad del manuscrito y la presentación, redacción y claridad del manuscrito.
               </p>
             </dd>
           </div>
-          <dd class="pt-4 mt-4 border-t border-zinc-200">
-            <p class="text-sm text-zinc-500">
-              Say goodbye to outdated tools and upgrade to a modern experience.
-            </p>
-          </dd>
-          <button
-          class="relative flex items-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-white bg-blue-700 outline outline-blue-700 hover:bg-blue-600 focus-visible:outline-blue-600 h-10 px-5 text-sm shrink-0"
-          >
-            Descargar plantilla
-        </button>
+          <a href="public/docs/iestec_2026_paper_template.docx" download class="btn mt-4 relative flex items-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-xl text-white bg-blue-700 outline outline-blue-700 hover:bg-blue-600 focus-visible:outline-blue-600 h-10 px-5 text-sm shrink-0 w-fit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 me-1">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-.53 14.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V8.25a.75.75 0 0 0-1.5 0v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z" clip-rule="evenodd" />
+            </svg>
+            Descargar plantilla para artículos
+          </a>
         </div>
+        <!-- Card poster -->
         <div
           class="p-8 bg-linear-180 outline outline-zinc-100 from-zinc-50 to-zinc-100 rounded-xl"
         >
@@ -150,33 +190,53 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
             </dt>
             <dd>
               <p class="text-base mt-2 text-zinc-600">
-                Easy to customize, simple to use, no expertise required.
+                Invitamos a presentar pósteres con contribuciones originales e inéditas de interés práctico y/o teórico que aborden cualquiera de nuestras <a href="/areastematicas" class="text-blue-600">áreas temáticas.</a>
+              </p>
+
+              <p class="text-base mt-2 text-zinc-600">
+                IESTEC 2026 también incluirá una sección de pósteres y se solicitan pósteres técnicos que presenten investigaciones innovadoras y originales. Además, IESTEC está interesada en pósteres de tecnología, con especial atención a trabajos en curso, próximos retos de investigación y nuevas direcciones en los temas de la conferencia.
+              </p>
+
+              <p class="text-base mt-2 text-zinc-600">
+                El sitio para el envío de pósteres estará disponible próximamente.
+              </p>
+              <ul class="list-disc text-zinc-600 ms-4 mt-4">
+                <li>Para que el póster aparezca en el Programa y las Actas del Congreso, es necesario que uno de los autores se haya inscrito en el congreso y lo presente presencialmente.</li>
+                <li>Los pósteres deben ser inéditos y no haber sido enviados a ninguna otra publicación.</li>
+                <li>El contenido del póster debe ser original y relevante para uno de los múltiples temas del congreso.</li>
+                <li>Los autores deben garantizar la precisión de las citas, referencias, diagramas, mapas y tablas.</li>
+                <li>Las figuras y tablas deben ubicarse en el texto donde aparecerán y deben ser claras y fáciles de visualizar (alta definición).</li>
+                <li>Los pósteres deben estar en inglés o español en formato póster de congreso: el material puede ser papel o vinilo y el tamaño es A0 vertical (84,1 cm x 118,9 cm / 33,1 pulgadas x 46,81 pulgadas).</li>
+              </ul>
+            </dd>
+            <dd class="pt-4 mt-4 border-t border-zinc-200">
+              <p class="text-base font-bold mt-2 text-gray-700">
+                Lineamientos
+              </p>
+
+              <ul class="list-disc text-sm text-zinc-500 ms-4 mt-2">
+                <li>Para los pósteres, los autores deben enviar un resumen de 500 palabras.</li>
+                <li>Los resúmenes deben estar en inglés o español y seguir el formato de la plantilla descargable (enlace).</li>
+                <li>Asegúrese de revisar y verificar la exactitud de su resumen antes de enviarlo.</li>
+                <li>Los resúmenes serán evaluados por un Comité Técnico; su revisión será de su exclusiva responsabilidad y sus decisiones serán inapelables.</li>
+                <li>El contenido debe ser inédito y no haber sido enviado a ninguna otra plataforma.</li>
+                <li>El contenido debe ser original y relevante para alguno de los temas de la conferencia.</li>
+                <li>Los resúmenes deben enviarse en formato WORD o PDF sin la información de los autores, a través de la plataforma (enlace).</li>
+              </ul>
               </p>
             </dd>
           </div>
           <dd class="pt-4 mt-4 border-t border-zinc-200">
             <p class="text-sm text-zinc-500">
-              It just works. No manuals, no confusion—just productivity.
+              Las decisiones de aceptación considerarán la relevancia del trabajo, el contenido técnico y el rigor científico y la calidad del resumen.
             </p>
           </dd>
+          <a href="public/docs/iestec_2026_poster_template.docx" download class="btn mt-4 relative flex items-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-xl text-white bg-blue-700 outline outline-blue-700 hover:bg-blue-600 focus-visible:outline-blue-600 h-10 px-5 text-sm shrink-0 w-fit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 me-1">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-.53 14.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V8.25a.75.75 0 0 0-1.5 0v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z" clip-rule="evenodd" />
+            </svg>
+            Descargar plantilla para póster
+          </a>
         </div>
       </dl>
-      <div class="flex flex-wrap items-center justify-center mt-8 gap-2">
-        <button
-          class="relative flex items-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-white bg-zinc-900 outline outline-zinc-900 hover:bg-zinc-950 focus-visible:outline-zinc-950 h-10 px-5 text-sm shrink-0"
-        >
-          Ver más información
-        </button>
-        <button
-          class="relative flex items-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-white bg-blue-700 outline outline-blue-700 hover:bg-blue-600 focus-visible:outline-blue-600 h-10 px-5 text-sm shrink-0"
-        >
-          Get Windows version
-        </button>
-        <button
-          class="relative flex items-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-zinc-600 bg-zinc-50 outline outline-zinc-100 hover:bg-zinc-200 focus-visible:outline-zinc-600 h-10 px-5 text-sm shrink-0"
-        >
-          Get Linux version
-        </button>
-      </div>
-      
 </BaseLayout>
