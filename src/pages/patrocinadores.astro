@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayoutContent.astro";
 ---
 <BaseLayout>
-    <div class="items-center grid grid-cols-1 lg:grid-cols-3 gap-8 lg:px-18">
+    <div class="items-center grid grid-cols-1 lg:grid-cols-3 gap-8 lg:px-18 lg:pt-18">
         <div class="flex flex-col justify-center h-full lg:order-last">
           <div>
             <h1
@@ -33,7 +33,7 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
           </div>
         </div>
         <img
-          src="public/fotos/IMG_0527.jpg"
+          src="public/fotos/IMG_9410.jpg"
           alt="#_"
           loading="lazy"
           decoding="async"
@@ -44,7 +44,7 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
         />
       </div>
       <div
-        class="pt-12 mx-auto mt-12 lg:mb-8 border-t prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-700 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl border-zinc-200"
+        class="pt-12 mx-auto max-w-5xl mt-12 lg:mb-8 border-t prose text-zinc-500 prose-a:font-semibold prose-a:text-blue-300 hover:prose-a:text-zinc-900 prose-headings:text-zinc-900 prose-blockquote:text-blue-700 prose-code:text-blue-400 prose-strong:text-blue-500 prose-img:rounded-3xl prose-pre:rounded-2xl border-zinc-200"
       >
         <p>
             El Congreso Internacional de Ingeniería, Ciencias y Tecnología – IESTEC 2026 ofrece un espacio privilegiado para la construcción de alianzas estratégicas entre academia, industria, sector público y organismos internacionales, con el objetivo común de impulsar el desarrollo científico, tecnológico y la innovación con impacto social.
@@ -93,5 +93,60 @@ import BaseLayout from "../layouts/BaseLayoutContent.astro";
             Juntos podemos inspirar, investigar e innovar, fortaleciendo el ecosistema científico y tecnológico y generando un impacto positivo y duradero en la sociedad.
         </p>
     </div>
-      
+
+    <h2
+  class="pt-18 text-sm font-semibold text-center uppercase text-zinc-600 lg:text-balance"
+>
+  Algunos aliados de nuestra pasada edición
+</h2>
+<div
+  class="items-center max-w-lg mx-auto mt-8 grid grid-cols-4 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-auto lg:max-w-5xl lg:grid-cols-5"
+>
+  <img
+    class="col-span-2 lg:col-span-1 object-contain size-32 w-fit"
+    src="public/logosaliados/pasados/p0.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-20 w-fit"
+    src="public/logosaliados/pasados/p1.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-20 w-fit"
+    src="public/logosaliados/pasados/p2.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-18 w-fit"
+    src="public/logosaliados/pasados/p3.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-12 w-fit"
+    src="public/logosaliados/pasados/p4.png"
+    alt="#_"
+  />
+</div>
+<div
+  class="pb-8 items-center max-w-lg mx-auto mt-8 grid grid-cols-4 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-auto lg:max-w-5xl lg:grid-cols-5"
+>
+  <img
+    class="col-span-2 lg:col-span-1 object-contains size-20 h-fit w-full"
+    src="public/logosaliados/pasados/p5.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-20 h-fit w-full"
+    src="public/logosaliados/pasados/p6.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-20 h-fit w-full"
+    src="public/logosaliados/pasados/p7.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-18 h-fit w-full"
+    src="public/logosaliados/pasados/p8.png"
+    alt="#_"
+  /><img
+    class="col-span-2 lg:col-span-1 object-contains size-18 h-fit w-full"
+    src="public/logosaliados/pasados/p9.png"
+    alt="#_"
+  />
+</div>  
 </BaseLayout>
